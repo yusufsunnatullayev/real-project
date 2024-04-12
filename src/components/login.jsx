@@ -38,7 +38,6 @@ export default function Login() {
     <div className="text-center mt-5">
       <main className="form-signin w-25 m-auto">
         <form>
-          <img className="mb-2" src={icon} alt="" width="72" height="60" />
           <h1 className="h3 mb-3 fw-normal">Please Login</h1>
           <ValidationError />
 

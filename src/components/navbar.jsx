@@ -22,18 +22,23 @@ const Navbar = () => {
         <img src={logo} alt="" />
       </Link>
 
-      <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+      <Link to={'/'} className="d-flex align-items-center link-body-emphasis text-decoration-none">
+        <img src="/removed-bg-logo.png" style={{ width: 100, height: 100 }} alt="" />
+      </Link>
+
+
+      <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto text-light">
         {loggedIn ? (
           <>
             <Link
-              className="me-3 m-0 py-2 link-body-emphasis text-decoration-none"
+              className="me-3 m-0 py-2  text-decoration-none text-light"
               to={"/user"}
             >
               {user.username}
             </Link>
 
             <Link
-              className="me-3 py-2 link-body-emphasis text-decoration-none"
+              className="me-3 py-2  text-decoration-none text-light"
               to={"/create-article"}
             >
               Create Article
@@ -45,13 +50,13 @@ const Navbar = () => {
         ) : (
           <>
             <Link
-              className="me-3 py-2 link-body-emphasis text-decoration-none"
+              className="me-3 py-2  text-decoration-none text-light"
               to={"/login"}
             >
               Login
             </Link>
             <Link
-              className="me-3 py-2 link-body-emphasis text-decoration-none"
+              className="me-3 py-2  text-decoration-none text-light"
               to={"/register"}
             >
               Register

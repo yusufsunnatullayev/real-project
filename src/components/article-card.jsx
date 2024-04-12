@@ -15,8 +15,8 @@ const ArticleCard = ({ item, getArticles }) => {
     }
   };
   return (
-    <div className="col" key={item.id}>
-      <div className="card h-100 shadow-sm">
+    <div className="col " key={item.id}>
+      <div className="card h-100 shadow-sm bg-dark text-light">
         <svg
           className="bd-placeholder-img card-img-top"
           width="100%"
@@ -30,7 +30,7 @@ const ArticleCard = ({ item, getArticles }) => {
           <title>Placeholder</title>
           <rect width="100%" height="100%" fill="#55595c"></rect>
         </svg>
-        <div className="card-body">
+        <div className="card-body" >
           <p className="card-text fw-bold m-0">{item.title}</p>
           <p className="card-text">{item.description}</p>
         </div>
@@ -62,7 +62,7 @@ const ArticleCard = ({ item, getArticles }) => {
               </>
             )}
           </div>
-          <small className="text-body-secondary fw-bold text-capitalize">
+          <small className="text-light fw-bold text-capitalize">
             {item.author.username}
           </small>
         </div>
